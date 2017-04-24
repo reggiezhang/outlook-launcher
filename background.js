@@ -12,7 +12,7 @@ function goToInbox() {
     for (var i = 0, tab; tab = tabs[i]; i++) {
       if (tab.url && isOutlookUrl(tab.url)) {
         console.log('Found Outlook tab: ' + tab.url);
-        chrome.tabs.update(tab.id, {selected: true, pinned: true});
+        chrome.tabs.update(tab.id, {active: true, pinned: true});
         return;
       }
     }
