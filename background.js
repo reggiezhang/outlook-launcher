@@ -6,7 +6,7 @@ function isOutlookUrl(url) {
   // Return whether the URL starts with the Outlook prefix.
   return url.startsWith(getOutlookUrl());
 }
-function goToInbox() {
+function gotoInbox() {
   console.log('Going to inbox...');
   chrome.tabs.getAllInWindow(undefined, function(tabs) {
     for (var i = 0, tab; tab = tabs[i]; i++) {
@@ -21,4 +21,4 @@ function goToInbox() {
   });
 }
 
-chrome.browserAction.onClicked.addListener(goToInbox);
+chrome.browserAction.onClicked.addListener(gotoInbox);
