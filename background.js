@@ -6,7 +6,7 @@
  *
  */
 function getOutlookUrl() {
-  return "https://outlook.live.com/owa/";
+  return "https://outlook.live.com/mail/";
 }
 
 function isOutlookUrl(url) {
